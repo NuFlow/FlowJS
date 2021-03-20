@@ -1,4 +1,4 @@
-# FlowJS
+# FlowJS (Work in Progress)
 
 ## Hello, world! Example:
 ```js
@@ -20,3 +20,9 @@ const result = await flow.promisify()
 	
 // result: hello, world!
 ```
+
+## Tools used to create FlowJS:
+- Rollup for building and bundling
+- FlowType for static type-checking
+- Jest for runtime tests
+- WallabyJS for debugging and helping Jest along
