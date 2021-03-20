@@ -1,0 +1,64 @@
+{
+  "name": "flow",
+  "version": "1.0.0",
+  "description": "Flow is a flow based programming library to simplify code structure.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c config/rollup.config.js --environment build:production",
+    "prepublish": "npm run build",
+    "dev": "rollup -c config/rollup.config.js -w --environment build:dev",
+    "flow": "flow"
+  },
+  "keywords": [
+    "flow",
+    "flow",
+    "control",
+    "flow",
+    "based",
+    "programming",
+    "library",
+    "API",
+    "utility",
+    "schema",
+    "object",
+    "chainable",
+    "monad",
+    "bootstrap",
+    "turn",
+    "based",
+    "turn",
+    "based",
+    "programming",
+    "microcosm",
+    "declarative",
+    "javascript"
+  ],
+  "author": "Levi Roberts",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-strip": "^2.0.0",
+    "flow-bin": "^0.146.0",
+    "flow-remove-types": "^2.146.0",
+    "rollup": "^2.41.2",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "rollup-plugin-filesize": "^9.1.1",
+    "rollup-plugin-flow": "^1.1.1",
+    "rollup-plugin-gzip": "^2.5.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NuFlow/FlowJS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NuFlow/FlowJS/issues"
+  },
+  "homepage": "https://github.com/NuFlow/FlowJS"
+}
+}
