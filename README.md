@@ -29,7 +29,7 @@ const result = await flow.promisify()
 <br>
 
 # Include into your project (CommonJS)
-```
+```js
 const Flow = require('flow')
 const flow = new Flow()
 ```
