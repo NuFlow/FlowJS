@@ -21,6 +21,21 @@ const result = await flow.promisify()
 // result: hello, world!
 ```
 
+<br>
+
+## Installation:
+`npm install https://github.com/NuFlow/FlowJS --save`
+
+<br>
+
+# Include into your project (CommonJS)
+```
+const Flow = require('flow')
+const flow = new Flow()
+```
+
+<br>
+
 ## Tools used to create FlowJS:
 - Rollup for building and bundling
 - FlowType for static type-checking
