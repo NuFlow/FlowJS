@@ -1,7 +1,7 @@
 # FlowJS
 
 ## Hello, world! Example:
-```
+```js
 // Setup code
 async function hello() {
   return 'hello'
