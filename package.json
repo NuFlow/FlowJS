@@ -2,7 +2,7 @@
   "name": "flow",
   "version": "1.0.0",
   "description": "Flow is a flow based programming library to simplify code structure.",
-  "main": "index.js",
+  "main": "build/flow.js",
   "directories": {
     "example": "examples",
     "lib": "lib"
