@@ -28,7 +28,7 @@ const result = await flow.promisify()
 - Tiny library size! 2.17 KB minified and under 1KB gzipped!
 - Cross Platform - Runs everywhere Javascript does
 - Declarative style (tell the library WHAT you want, not how you want it) - [1](https://codeburst.io/declarative-vs-imperative-programming-a8a7c93d9ad2) [2](http://latentflip.com/imperative-vs-declarative) [3](https://stackoverflow.com/a/39561818) [4](https://tylermcginnis.com/imperative-vs-declarative-programming/)
-- Functions have a lot of freedom use: return values, Promises, async/await, or the traditional callback. Flow gets out of your way!
+- Functions have a lot of freedom, use: return values, Promises, async/await, or the traditional callback. Flow gets out of your way!
 
 <br>
 
