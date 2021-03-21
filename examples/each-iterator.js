@@ -9,7 +9,7 @@ const animals = [
   { species: 'zebra', name: 'dot' },
 ]
 
-function logResult(description, result) {
+function logResult(result, description) {
   console.log(description)
   console.log(result)
   console.log()

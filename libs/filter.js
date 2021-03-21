@@ -1,8 +1,7 @@
-async function Filter(str, value, arr) {
+async function filter(arr, str, value) {
   // Sort by object keys/values instead
   if (typeof str === 'object') {
     const obj = str
-    arr = value
     const results = []
 
     for (const item of arr) {
@@ -31,4 +30,4 @@ async function Filter(str, value, arr) {
   }
 }
 
-module.exports = Filter
+module.exports = filter
