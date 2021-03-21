@@ -1,5 +1,5 @@
 const Flow = require('../build/flow')
-Flow.use('Filter', require('../libs/Filter'))
+Flow.use('filter', require('../libs/filter'))
 
 const animals = [
   { species: 'cat', name: 'fluffy' },
@@ -21,7 +21,7 @@ let flow
 flow = new Flow()
 flow
   .from(async () => animals)
-  .to(flow.Filter, 'name', 'woofie' ) // Filter using a single key/value
+  .to(flow.filter, 'name', 'woofie' ) // Filter using a single key/value
   .to(logResult, 'Find dog named woolfie')
   .run()
 
@@ -29,7 +29,7 @@ flow
 flow = new Flow()
 flow
   .from(async () => animals)
-  .to(flow.Filter, { species: 'zebra' }) // Filter more complex objects
+  .to(flow.filter, { species: 'zebra' }) // Filter more complex objects
   .to(logResult, 'Find all zebras')
   .run()
 
@@ -37,6 +37,6 @@ flow
 flow = new Flow()
 flow
   .from(async () => animals)
-  .to(flow.Filter, { species: 'zebra', name: 'spot' }) // Filter more complex objects (more specifically; narrowing our results)
+  .to(flow.filter, { species: 'zebra', name: 'spot' }) // Filter more complex objects (more specifically; narrowing our results)
   .to(logResult, 'spot the zebra')
   .run()
