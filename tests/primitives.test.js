@@ -45,6 +45,7 @@ test('Primitives with FlowJS', (done) => {
   flow
     .from('string')
     .to((res, cb) => {
+      expect(res).toBe('string')
       expect( isPrimitive(res) ).toBe(true)
       cb()
     })

@@ -5,6 +5,7 @@ test('Target as named function', (done) => {
   const flow = new Flow()
   flow
     .from(function namedFunction(cb) {
+      expect(typeof cb).toBe('function')
       cb()
     })
     .to(() => done())
@@ -15,6 +16,7 @@ test('Target as anonymous arrow function', (done) => {
   const flow = new Flow()
   flow
     .from((cb) => {
+      expect(typeof cb).toBe('function')
       cb()
     })
     .to(() => done())
@@ -43,6 +45,7 @@ test('Target as async/await', async (done) => {
 
 test('Callbacks for targets', (done) => {
   function testCallback(cb) {
+    expect(typeof cb).toBe('function')
     cb()
   }
 
@@ -60,6 +63,7 @@ test('Callbacks for targets with arguments', (done) => {
     expect(param2).toBe('param2')
     expect(param3).toBe('param3')
 
+    expect(typeof cb).toBe('function')
     cb(param1, param2, param3)
   }
 
@@ -76,6 +80,7 @@ test('Callbacks for target with results', (done) => {
     expect(param2).toBe('param2')
     expect(param3).toBe('param3')
 
+    expect(typeof cb).toBe('function')
     cb()
   }
 
