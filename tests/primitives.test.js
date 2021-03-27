@@ -52,3 +52,24 @@ test('Primitives with FlowJS', (done) => {
     .to(() => done())
     .run()
 })
+
+test('Primitives as .to target', (done) => {
+  const flow = new Flow()
+  flow
+    .from('string')
+    .to((res, cb) => {
+      expect(res).toBe('string')
+      expect( isPrimitive(res) ).toBe(true)
+      expect(typeof cb).toBe('function')
+      cb()
+    })
+    .to('test')
+    .to((res, cb) => {
+      expect(res).toBe('test')
+      expect( isPrimitive(res) ).toBe(true)
+      expect(typeof cb).toBe('function')
+      cb()
+    })
+    .to(() => done())
+    .run()
+})
