@@ -33,6 +33,8 @@ export default {
       pretty: true
     }),
 
+
+
     strip({
       functions: ['console.log'],
     }),
